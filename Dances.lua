@@ -6,7 +6,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "انتضر قليلا",
-                Text = "السكربت تشغيل حتى ثانيه 15 الى ثانيه من انتضر",
+                Text = "السكربت تشغيل حتى ثانيه 51 الى ثانيه من انتضر",
                  Duration = 15})
 
 if game:GetService("CoreGui"):FindFirstChild("Emotes") then
@@ -78,9 +78,12 @@ BackFrame.Size = UDim2.new(0.9, 0, 0.5, 0)
 BackFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 BackFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 BackFrame.SizeConstraint = Enum.SizeConstraint.RelativeYY
-BackFrame.BackgroundTransparency = 1
+BackFrame.BackgroundTransparency = 0.8
 BackFrame.BorderSizePixel = 0
 BackFrame.Parent = ScreenGui
+BackFrame.Draggable = true
+BackFrame.Active = true
+BackFrame.Selectable = true
 
 local EmoteName = Instance.new("TextLabel")
 EmoteName.Name = "EmoteName"
@@ -93,13 +96,16 @@ EmoteName.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 EmoteName.TextColor3 = Color3.new(1, 1, 1)
 EmoteName.BorderSizePixel = 0
 EmoteName.Parent = BackFrame
+EmoteName.Draggable = true
+EmoteName.Active = true
+EmoteName.Selectable = true
 
 local Corner = Instance.new("UICorner")
 Corner.Parent = EmoteName
 
 local Loading = Instance.new("TextLabel", BackFrame)
 Loading.AnchorPoint = Vector2.new(0.5, 0.5)
-Loading.Text = "Loading..."
+Loading.Text = "...التحميل جاري"
 Loading.TextColor3 = Color3.new(1, 1, 1)
 Loading.BackgroundColor3 = Color3.new(0, 0, 0)
 Loading.TextScaled = true
@@ -119,7 +125,7 @@ Frame.BackgroundTransparency = 1
 Frame.ScrollBarThickness = 5
 Frame.BorderSizePixel = 0
 Frame.MouseLeave:Connect(function()
-	EmoteName.Text = "Select an Emote"
+	EmoteName.Text = "رقصه اختر"
 end)
 Frame.Parent = BackFrame
 
@@ -178,12 +184,12 @@ local function createsort(order, text, sort)
 	return CreatedSort
 end
 
-createsort(1, "Recently Updated First", "recentfirst")
-createsort(2, "Recently Updated Last", "recentlast")
-createsort(3, "Alphabetically First", "alphabeticfirst")
-createsort(4, "Alphabetically Last", "alphabeticlast")
-createsort(5, "Highest Price", "highestprice")
-createsort(6, "Lowest Price", "lowestprice")
+createsort(1, "رقصات حديثه", "recentfirst")
+createsort(2, "رقصات محدثه", "recentlast")
+createsort(3, "من الاف الى الياء", "alphabeticfirst")
+createsort(4, "من الياء الى الاف", "alphabeticlast")
+createsort(5, "سعر غالي", "highestprice")
+createsort(6, "سعر رخيص", "lowestprice")
 
 local SortButton = Instance.new("TextButton")
 SortButton.BorderSizePixel = 0
@@ -210,7 +216,7 @@ CloseButton.TextScaled = true
 CloseButton.TextColor3 = Color3.new(1, 1, 1)
 CloseButton.BackgroundColor3 = Color3.new(0.5, 0, 0)
 CloseButton.BackgroundTransparency = 0.3
-CloseButton.Text = "gui ال اقفال"
+CloseButton.Text = "اغلاق السكربت"
 CloseButton.MouseButton1Click:Connect(function()
 	ScreenGui:Destroy()
 end)
@@ -605,6 +611,9 @@ Open.TextColor3 = Color3.fromRGB(255, 255, 255)
 Open.TextScaled = true
 Open.TextSize = 20
 Open.Visible = true
+Open.Draggable = true
+Open.Active = true
+Open.Selectable = true
 Open.BackgroundTransparency = .5
 Open.MouseButton1Up:Connect(function()
 if Open.Text == "فتح" then
