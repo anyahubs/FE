@@ -1,1 +1,4 @@
+--شغل ذا السكربت و بعديت اضغط على زر تشغيل و اول ما يفتح السكربت
+loadstring(game:HttpGet("https://raw.githubusercontent.com/anyahubs/FE/main/brookhaven_LOADER.lua"))()
+--شغل هاذا
 loadstring(game:HttpGet("https://raw.githubusercontent.com/anyahubs/FE/main/ICEHUB_ARABIC"))()
