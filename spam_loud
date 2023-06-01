@@ -1,0 +1,18 @@
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
+local SoundService = game:GetService("SoundService")
+
+if SoundService.RespectFilteringEnabled == false then
+	Notification.new("success", "Success", "الصوت سماع يستطيع الكل!")
+	Notification.new("message", "Discord : Anya.DEV", "credits for anya")
+else
+	Notification.new("warning", "Warning", "الصوت سماع احد يستطيع لا!")
+end
+
+while wait() do
+	for _, sound in next, workspace:GetDescendants() do
+		if sound:IsA("Sound") then
+			sound.Volume = 10
+			sound:Play()
+		end
+	end
+end
