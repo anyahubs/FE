@@ -32,11 +32,8 @@
 
 
 
-repeat task.wait() until game:IsLoaded()
-repeat task.wait() until game:GetService('Players').LocalPlayer ~= nil
 
-game:GetService("RunService").RenderStepped:Connect(function()
-while wait(5) do
+
 --locals
 wait(5)
 local upframe = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer
@@ -163,14 +160,8 @@ UICorner.Parent = playerlist.TitleBar
 
 --destroy
 --end
-end
-end)
-local CoreGui = game:GetService("CoreGui")
-local DevConsole = CoreGui:WaitForChild("DevConsoleMaster")
-
-DevConsole:Destroy()
 game:GetService('Players').LocalPlayer.DevEnableMouseLock = true
-wait(100)
+
 local non1 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Page["Performance StatsFrame"]
 local non2 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Page["Camera InvertedFrame"]
 local non3 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Page["Micro ProfilerFrame"]
