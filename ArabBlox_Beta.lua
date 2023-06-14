@@ -38,6 +38,7 @@ repeat task.wait() until game:GetService('Players').LocalPlayer ~= nil
 game:GetService("RunService").RenderStepped:Connect(function()
 while wait(5) do
 --locals
+wait(5)
 local upframe = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer
 local inviteframe = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Players.ImageButton.TextLabel
 local resetplayer = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.BottomButtonFrame
@@ -99,7 +100,7 @@ rechar.Text = "الشخصية تحديث"
 resume.Text = "اغلاق"
 --end
 -- settings
-wait(1)
+wait(5)
 cameramod.Text = "الكاميرا وضع"
 camsenv.Text = "الكاميرا حساسية"
 language.Text = "(anya.dev) / العربيه اللغه"
@@ -129,7 +130,7 @@ textboxreport.PlaceholderText = "بلاغك اكتب"
 --end
 
 --topbarframe
-wait(1)
+wait(5)
 showall1.Visible = true
 showall2.Visible = true
 showall3.Visible = true
@@ -142,15 +143,15 @@ showtext3.TextSize = 25
 --end
 
 --backpack
-wait(10)
+wait(15)
 loadstring(game:HttpGet('https://pastebin.com/raw/RGGdbjrH'))()
 --end
 --chat
-wait(1)
+wait(5)
 chatbox.PlaceholderText = "هنا اكتب" .. " / اضغط او"
 --end
 --playerlist
-wait(2)
+wait(5)
 playerlist.TitleBar.ChildrenFrame.playersHeader.Text = "لاعبين"
 playerlist.TitleBar.ChildrenFrame.playersHeader.TextSize = 18
 local UICorner = Instance.new("UICorner")
