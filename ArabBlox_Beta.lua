@@ -69,7 +69,6 @@ local anyalogo = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShi
 anyalogos = game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame.MenuIcon.Background.Icon
 local anyalogo2 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarHomeButton
 local backpackframe = game:GetService("CoreGui").RobloxGui.Backpack
-local chatbox = game:GetService("CoreGui").ExperienceChat.appLayout.chatInputBar.Background.Container.TextContainer.TextBoxContainer.TextBox
 local playerlist = game:GetService("CoreGui").PlayerList.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame
 --up frame
 
@@ -133,7 +132,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/RGGdbjrH'))()
 --end
 
 --chat
-chatbox.PlaceholderText = "هنا اكتب" .. " / اضغط او"
+--chatbox.PlaceholderText = "هنا اكتب" .. " / اضغط او"
 --end
 
 
