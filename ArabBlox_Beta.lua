@@ -69,7 +69,6 @@ local anyalogo = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShi
 anyalogos = game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame.MenuIcon.Background.Icon
 local anyalogo2 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarHomeButton
 local backpackframe = game:GetService("CoreGui").RobloxGui.Backpack
-local playerlist = game:GetService("CoreGui").PlayerList.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame
 --up frame
 
 upframe.PlayersTab.Icon.Title.Text = "اللاعبين"
@@ -118,15 +117,6 @@ textboxreport.PlaceholderColor3 = Color3.new(255,0,0)
 textboxreport.PlaceholderText = "بلاغك اكتب"
 --end
 
-
---playerlist
-playerlist.TitleBar.ChildrenFrame.playersHeader.Text = "لاعبين"
-playerlist.TitleBar.ChildrenFrame.playersHeader.TextSize = 18
-local UICorner = Instance.new("UICorner")
-UICorner.Parent = playerlist.ScrollingFrameContainer
-local UICorner = Instance.new("UICorner")
-UICorner.Parent = playerlist.TitleBar
---end
 --backpack
 loadstring(game:HttpGet('https://pastebin.com/raw/RGGdbjrH'))()
 --end
