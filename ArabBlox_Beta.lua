@@ -68,9 +68,6 @@ local textboxreport = game:GetService("CoreGui").RobloxGui.SettingsShield.Settin
 local anyalogo = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarHomeButton.HubBarHomeButtonIcon
 anyalogos = game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame.MenuIcon.Background.Icon
 local anyalogo2 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarHomeButton
-local showtext1 = showall1.Cell.LeftAlignedContent.Text
-local showtext2 = showall2.Cell.LeftAlignedContent.Text
-local showtext3 = showall3.Cell.LeftAlignedContent.Text
 local backpackframe = game:GetService("CoreGui").RobloxGui.Backpack
 local chatbox = game:GetService("CoreGui").ExperienceChat.appLayout.chatInputBar.Background.Container.TextContainer.TextBoxContainer.TextBox
 local playerlist = game:GetService("CoreGui").PlayerList.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame
@@ -153,7 +150,9 @@ chatbox.PlaceholderText = "هنا اكتب" .. " / اضغط او"
 local showall1 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 1"]
 local showall2 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 2"]
 local showall3 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 3"]
-
+local showtext1 = showall1.Cell.LeftAlignedContent.Text
+local showtext2 = showall2.Cell.LeftAlignedContent.Text
+local showtext3 = showall3.Cell.LeftAlignedContent.Text
 game:GetService('Players').LocalPlayer.DevEnableMouseLock = true
 
 local non1 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Page["Performance StatsFrame"]
