@@ -35,7 +35,6 @@
 
 
 --locals
-wait(5)
 local upframe = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer
 local inviteframe = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Players.ImageButton.TextLabel
 local resetplayer = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.BottomButtonFrame
@@ -79,7 +78,7 @@ local backpackframe = game:GetService("CoreGui").RobloxGui.Backpack
 local chatbox = game:GetService("CoreGui").ExperienceChat.appLayout.chatInputBar.Background.Container.TextContainer.TextBoxContainer.TextBox
 local playerlist = game:GetService("CoreGui").PlayerList.PlayerListMaster.OffsetFrame.PlayerScrollList.SizeOffsetFrame
 --up frame
-wait(5)
+
 upframe.PlayersTab.Icon.Title.Text = "اللاعبين"
 upframe.GameSettingsTab.Icon.Title.Text = "الاعدادات"
 upframe.ReportAbuseTab.Icon.Title.Text = "ابلاغ"
@@ -97,7 +96,7 @@ rechar.Text = "الشخصية تحديث"
 resume.Text = "اغلاق"
 --end
 -- settings
-wait(5)
+
 cameramod.Text = "الكاميرا وضع"
 camsenv.Text = "الكاميرا حساسية"
 language.Text = "(anya.dev) / العربيه اللغه"
@@ -139,16 +138,10 @@ showtext3.Text = "الحقيبة"
 showtext3.TextSize = 25
 --end
 
---backpack
-wait(15)
-loadstring(game:HttpGet('https://pastebin.com/raw/RGGdbjrH'))()
---end
 --chat
-wait(5)
 chatbox.PlaceholderText = "هنا اكتب" .. " / اضغط او"
 --end
 --playerlist
-wait(5)
 playerlist.TitleBar.ChildrenFrame.playersHeader.Text = "لاعبين"
 playerlist.TitleBar.ChildrenFrame.playersHeader.TextSize = 18
 local UICorner = Instance.new("UICorner")
@@ -156,10 +149,11 @@ UICorner.Parent = playerlist.ScrollingFrameContainer
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = playerlist.TitleBar
 --end
-
-
---destroy
+--backpack
+loadstring(game:HttpGet('https://pastebin.com/raw/RGGdbjrH'))()
 --end
+
+
 game:GetService('Players').LocalPlayer.DevEnableMouseLock = true
 
 local non1 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Page["Performance StatsFrame"]
