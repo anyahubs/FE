@@ -131,28 +131,12 @@ UICorner.Parent = playerlist.TitleBar
 --backpack
 loadstring(game:HttpGet('https://pastebin.com/raw/RGGdbjrH'))()
 --end
---topbarframe
-showall1.Visible = true
-showall2.Visible = true
-showall3.Visible = true
-showtext1.Text = "المتصدرين"
-showtext1.TextSize = 25
-showtext2.Text = "الرقصات"
-showtext2.TextSize = 25
-showtext3.Text = "الحقيبة"
-showtext3.TextSize = 25
---end
 
 --chat
 chatbox.PlaceholderText = "هنا اكتب" .. " / اضغط او"
 --end
 
-local showall1 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 1"]
-local showall2 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 2"]
-local showall3 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 3"]
-local showtext1 = showall1.Cell.LeftAlignedContent.Text
-local showtext2 = showall2.Cell.LeftAlignedContent.Text
-local showtext3 = showall3.Cell.LeftAlignedContent.Text
+
 game:GetService('Players').LocalPlayer.DevEnableMouseLock = true
 
 local non1 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Page["Performance StatsFrame"]
@@ -163,3 +147,24 @@ non1:Destroy()
 non2:Destroy()
 non3:Destroy()
 non4:Destroy()
+
+--end
+--topbarframe
+local showall2 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 2"]
+local showall3 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 3"]
+local showtext1 = showall1.Cell.LeftAlignedContent.Text
+local showtext2 = showall2.Cell.LeftAlignedContent.Text
+local showtext3 = showall3.Cell.LeftAlignedContent.Text
+showall2.Visible = true
+showall3.Visible = true
+showtext1.Text = "المتصدرين"
+showtext1.TextSize = 25
+showtext2.Text = "الرقصات"
+showtext2.TextSize = 25
+showtext3.Text = "الحقيبة"
+showtext3.TextSize = 25
+local showall1 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 1"]
+showall1.Visible = true
+showtext1.Text = "المتصدرين"
+
+--end
