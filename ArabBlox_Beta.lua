@@ -68,9 +68,6 @@ local textboxreport = game:GetService("CoreGui").RobloxGui.SettingsShield.Settin
 local anyalogo = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarHomeButton.HubBarHomeButtonIcon
 anyalogos = game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame.MenuIcon.Background.Icon
 local anyalogo2 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarHomeButton
-local showall1 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 1"]
-local showall2 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 2"]
-local showall3 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 3"]
 local showtext1 = showall1.Cell.LeftAlignedContent.Text
 local showtext2 = showall2.Cell.LeftAlignedContent.Text
 local showtext3 = showall3.Cell.LeftAlignedContent.Text
@@ -125,8 +122,19 @@ textboxreport.PlaceholderColor3 = Color3.new(255,0,0)
 textboxreport.PlaceholderText = "بلاغك اكتب"
 --end
 
+
+--playerlist
+playerlist.TitleBar.ChildrenFrame.playersHeader.Text = "لاعبين"
+playerlist.TitleBar.ChildrenFrame.playersHeader.TextSize = 18
+local UICorner = Instance.new("UICorner")
+UICorner.Parent = playerlist.ScrollingFrameContainer
+local UICorner = Instance.new("UICorner")
+UICorner.Parent = playerlist.TitleBar
+--end
+--backpack
+loadstring(game:HttpGet('https://pastebin.com/raw/RGGdbjrH'))()
+--end
 --topbarframe
-wait(5)
 showall1.Visible = true
 showall2.Visible = true
 showall3.Visible = true
@@ -141,18 +149,10 @@ showtext3.TextSize = 25
 --chat
 chatbox.PlaceholderText = "هنا اكتب" .. " / اضغط او"
 --end
---playerlist
-playerlist.TitleBar.ChildrenFrame.playersHeader.Text = "لاعبين"
-playerlist.TitleBar.ChildrenFrame.playersHeader.TextSize = 18
-local UICorner = Instance.new("UICorner")
-UICorner.Parent = playerlist.ScrollingFrameContainer
-local UICorner = Instance.new("UICorner")
-UICorner.Parent = playerlist.TitleBar
---end
---backpack
-loadstring(game:HttpGet('https://pastebin.com/raw/RGGdbjrH'))()
---end
 
+local showall1 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 1"]
+local showall2 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 2"]
+local showall3 = game:GetService("CoreGui").TopBarApp.TopBarFrame.RightFrame.MoreMenu.MoreMenuContainer.OverlayContextualMenu.PositionFrame.BaseMenu.ClippingFrame.ScrollingFrame["cell 3"]
 
 game:GetService('Players').LocalPlayer.DevEnableMouseLock = true
 
