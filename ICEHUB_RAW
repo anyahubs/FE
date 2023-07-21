@@ -1,4 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/anyahubs/FE/main/brookhaven_LOADER.lua"))()
-wait(18)
-print("التعريب تم")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/anyahubs/FE/main/ICEHUB_ARABIC"))()
