@@ -11,10 +11,10 @@ txt2.Text = "السكربت ناشرين: مود باندا & دنس حسين"
 txt1.TextSize = 18
 img1.Image = "rbxassetid://9329990575"
 image2.Image = "rbxassetid://14223887889"
-wait(5)
+wait(8)
 
 --maintexts
-wait(5)
+wait(3)
 local brookhavnen = game:GetService("CoreGui").IceHubLauncher.MainFrame.GameContainer.ListedGame.ScrollingFrame.Brookhaven
 brookhavnen.Text = "البيوت ماب"
 brookhavnen.TextSize = 18
@@ -30,7 +30,7 @@ redcliff.TextSize = 18
 local barry = game:GetService("CoreGui").IceHubLauncher.MainFrame.GameContainer.ListedGame.ScrollingFrame["Berry Avenue"]
 barry.Text = "افينيو بيري"
 barry.TextSize = 18
-wait(3)
+wait(2)
 local publicbath = game:GetService("CoreGui").IceHubLauncher.MainFrame.GameContainer.ListedGame.ScrollingFrame["Public Bathroom"]
 publicbath.Text = "العامه المياه دورات"
 publicbath.TextSize = 18
