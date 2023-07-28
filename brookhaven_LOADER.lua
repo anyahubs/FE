@@ -9,7 +9,9 @@ local vehicles = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.Scroll
 local fun = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[6]
 local other = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[7]
 local premium = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[8]
-local tools = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[9]
+local tools99 = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[9]
+tools99.Text = "الاغراض"
+tools99.TextSize = 18
 local teleport = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[10]
 local kill = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[11]
 --menuframe
