@@ -58,5 +58,5 @@ end)
 
 UITextSizeConstraint_2.Parent = TextButton
 UITextSizeConstraint_2.MaxTextSize = 20
-wait(25)
+wait(20)
 lol789.Visible = false
