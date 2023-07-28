@@ -54,7 +54,6 @@ TextButton.TextSize = 20.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/anyahubs/FE/main/brookhaven_LOADER.lua"))()
-lol789.Visible = false
 end)
 
 UITextSizeConstraint_2.Parent = TextButton
