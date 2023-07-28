@@ -52,19 +52,11 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 20.000
 TextButton.TextWrapped = true
+TextButton.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/anyahubs/FE/main/brookhaven_LOADER.lua"))()
+wait(2)
+lol789:Destroy()
+	end)
 
 UITextSizeConstraint_2.Parent = TextButton
 UITextSizeConstraint_2.MaxTextSize = 20
-
--- Scripts:
-
-local function KQHSCJB_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/anyahubs/FE/main/brookhaven_LOADER.lua"))()
-		wait(2)
-		script.Parent.Parent.Parent.Parent.lol789:Destroy()
-	end)
-end
-coroutine.wrap(KQHSCJB_fake_script)()
