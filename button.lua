@@ -13,7 +13,7 @@ local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 --Properties:
 
 lol789.Name = "lol789"
-lol789.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+lol789.Parent = game.CoreGui
 lol789.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = lol789
