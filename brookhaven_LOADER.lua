@@ -9,9 +9,9 @@ local vehicles = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.Scroll
 local fun = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[6]
 local other = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[7]
 local premium = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[8]
-local tools99 = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[9]
-tools99.Text = "الاغراض"
-tools99.TextSize = 18
+local tools9 = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[9]
+tools9.Text = "الاغراض"
+tools9.TextSize = 18
 local teleport = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[10]
 local kill = game:GetService("CoreGui").IceHub.MainFrame.TabContainer.ScrollingFrame:GetChildren()[11]
 --menuframe
@@ -207,7 +207,7 @@ homemusic.TextSize = 18
 homedoors.Text = "المنزل ابواب"
 homedoors.TextSize = 18
 
-antiban.Text = "الطرد من الطرد"
+antiban.Text = "الطرد ضد حمايه"
 antiban.TextSize = 18
 
 robhome.Text = "منزل سرقه"
@@ -307,4 +307,55 @@ game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.ToolPage:GetChildren(
 game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.ToolPage:GetChildren()[39].TextSize = 18
 game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.ToolPage:GetChildren()[44].TextSize = 18
 game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.ToolPage:GetChildren()[48].TextSize = 18
-game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.KillPage:GetChildren()[14].Text = "هههه شي مافيه"
+
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateButtonCooldown.Text = ""
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateButtonCooldown:GetChildren()[4].Text = "المنزل في نار"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateButtonCooldown:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateTextBox:GetChildren()[4].Text = "البايو اكتب"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateTextBox:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateButtonCooldown.TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateToggle:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateToggle:GetChildren()[4].Text = "ملون المنزل بايو"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[7]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[7]:GetChildren()[4].Text = "ملون منزل"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.Dropdown.Open.itemTextbox.Text = "لاعب اختر"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.Dropdown.Open.itemTextbox.TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[11].Open.itemTextbox.Text = "لاند اختر"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[11].Open.itemTextbox.TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[13]:GetChildren()[4].Text = "للمنزل صلاحيه الغاء"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[13]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[12]:GetChildren()[4].Text = "للمنزل صلاحيه اخذ"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[12]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[15]:GetChildren()[4].Text = "كراج سبام"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[15]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateToggleCooldown:GetChildren()[4].Text = "الستائر سبام"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateToggleCooldown:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[18]:GetChildren()[4].Text = "اطفال اغراض سبام"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[18]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[17]:GetChildren()[4].Text = "المنزل قفل سبام"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[17]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[19]:GetChildren()[4].Text = "مسبح سبام"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[19]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.BellBox:GetChildren()[4].Text = "لاعب تحديد"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.BellBox:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.BellBox.Box.PlaceholderText = "هنا اللاعب اسم"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[21]:GetChildren()[4].Text = "المنزل اغنيه"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[21]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[21].Box.PlaceholderText = "هنا الايدي"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[21].Box.TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateTextButton:GetChildren()[4].Text = "الباند فك"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage.TemplateTextButton:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[29]:GetChildren()[4].Text = "البلوك باند ضد حمايه"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[29]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[28]:GetChildren()[4].Text = "الباند ضد حمايه اوتو"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[28]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[25]:GetChildren()[4].Text = "الباب دق سبام"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[25]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[24]:GetChildren()[4].Text = "المنزل جرس سبام"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[24]:GetChildren()[4].TextSize = 18
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[31]:GetChildren()[4].Text = "هنا اللاعب اسم"
+game:GetService("CoreGui").IceHub.MainFrame.FrameContainer.HousePage:GetChildren()[31]:GetChildren()[4].TextSize = 18
+
+
+
+
