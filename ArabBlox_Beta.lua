@@ -2,7 +2,10 @@
 --what you read?
 --this script is obf
 
-
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game:GetService('Players').LocalPlayer ~= nil
+loadstring(game:HttpGet('https://eternityhub.xyz/BetterRoblox/Core/MainCore.lua'))()
+wait(3)
 
 
 
@@ -70,6 +73,8 @@ anyalogos = game:GetService("CoreGui").TopBarApp.TopBarFrame.LeftFrame.MenuIcon.
 local anyalogo2 = game:GetService("CoreGui").RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarHomeButton
 local backpackframe = game:GetService("CoreGui").RobloxGui.Backpack
 --up frame
+anyalogo.Name = "lol"
+anyalogo2.Name = "lol2"
 
 upframe.PlayersTab.Icon.Title.Text = "اللاعبين"
 upframe.GameSettingsTab.Icon.Title.Text = "الاعدادات"
@@ -77,8 +82,10 @@ upframe.ReportAbuseTab.Icon.Title.Text = "ابلاغ"
 upframe.HelpTab.Icon.Title.Text = "المساعدة"
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = anyalogo2
+while wait() do
 anyalogo.Image = "rbxassetid://13246399521"
 anyalogos.Image = "rbxassetid://13246399521"
+end
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = anyalogos
 --playersframe
